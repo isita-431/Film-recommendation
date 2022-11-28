@@ -1,4 +1,6 @@
-# ML X Data Science
+# Data Science Project
+ 
+Film recommendation system
 
 ## How to run it on your system
 1. Clone this repository 
