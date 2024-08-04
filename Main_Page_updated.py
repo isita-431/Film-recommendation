@@ -75,7 +75,7 @@ st.altair_chart(genre_vs_col)
 
 st.write("The genre with highest average ratings is **Classic & Cult TV** with an average rating of", 8.40 )
 
-<<<<<<< HEAD
+
 st.write("### Scatterplot to compare any two characteristics of the movie")
 
 data = data.drop(columns = [col for col in data.columns if '_y' in col])
