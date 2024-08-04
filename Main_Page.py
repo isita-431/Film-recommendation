@@ -251,7 +251,7 @@ vectorizer = TfidfVectorizer(max_features=1800, lowercase=True, stop_words='engl
 
 # features 
 tf_idf_output = vectorizer.fit_transform(films_df["desc"])
-vocab = np.array(vectorizer.get_feature_names())
+vocab = np.array(vectorizer.get_feature_names_out())
 
 input_keyword = st.text_input("Enter the keywords relating a movie you want to watch", 'boy romance girl crush love')
 
