@@ -123,10 +123,10 @@ year_avg_vote = alt.Chart(data).mark_point().encode(
 <<<<<<< HEAD
     title= str(x1) + str(" vs ") + str(y1), 
     width=600,
-=======
+
     title= str(x1) + str(" vs ") + str(y1),
     width=650,
->>>>>>> 66a4a7e5769d406186a65cf75aa41c5bb6927297
+
     height=500
 ).interactive()
 
@@ -162,13 +162,13 @@ genre_year = alt.Chart(data).mark_bar().encode(
     color = 'genre',
     tooltip=['year','genre','count()']
 ).properties(
-<<<<<<< HEAD
+
     title="Count of Records by Genre and Year", 
     width=600,
-=======
+
     title="Count of Records by Genre and Year",
     width=650,
->>>>>>> 66a4a7e5769d406186a65cf75aa41c5bb6927297
+
     height=500
 ).interactive()
 
@@ -187,15 +187,15 @@ from sklearn.decomposition import NMF
 from sklearn.metrics.pairwise import linear_kernel
 from queue import PriorityQueue as pq
 
-<<<<<<< HEAD
+
 st.markdown("# Inclusive Movie Recommedations")
 st.sidebar.markdown("# Inclusive Movie recommendations")
-=======
+
 import streamlit as st
 
 st.markdown("# Movie Recommendations")
 st.sidebar.markdown("# Movie recommendations")
->>>>>>> 66a4a7e5769d406186a65cf75aa41c5bb6927297
+
 
 text = open("datasets/review_ratings.csv",encoding="utf-8")
 output = open("datasets/res.txt","w",encoding="utf-8")
