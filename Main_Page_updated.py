@@ -84,7 +84,7 @@ x1 = st.selectbox('X1', x1_columns, index = 2)
 
 y1_columns = [i for i in  data.columns if i!=x1]
 y1 =  st.selectbox('Y1',y1_columns, index = 7)
-=======
+
 cr_pv = alt.Chart(data).mark_circle().encode(
     alt.X('critics_vote', bin=True, scale=alt.Scale(zero=False)),
     alt.Y('public_vote', bin=True),
