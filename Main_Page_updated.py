@@ -108,7 +108,6 @@ st.altair_chart(cr_pv, use_container_width=True)
 x1 = st.selectbox('X1', data.columns, index=2)
 
 y1 =  st.selectbox('Y1',[i for i in  data.columns if i!=x1],index=3)
->>>>>>> 66a4a7e5769d406186a65cf75aa41c5bb6927297
 
 
 year_avg_vote = alt.Chart(data).mark_point().encode(
@@ -120,7 +119,6 @@ year_avg_vote = alt.Chart(data).mark_point().encode(
     color='genre',
     tooltip=['title','avg_vote']
 ).properties(
-<<<<<<< HEAD
     title= str(x1) + str(" vs ") + str(y1), 
     width=600,
 
