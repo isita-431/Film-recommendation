@@ -141,7 +141,7 @@ for row in text:
     row_details = row.split('^')
     title, year, genre, duration = row_details[1].strip(' ,"\''), row_details[2].strip(' ,"\''), row_details[3].strip(' ,"\''), row_details[4].strip(' ,"\''')
     critic_rate, pub_rate = row_details[6].strip(' ,"\''), row_details[7].strip(' ,"\''')
-    desc, notes, listed_in, comment = row_details[8].strip(' ,"\''), row_details[9].strip(' ,"\''), row_details[16].strip(' ,"\''), row_details[17].strip(' ,"\''')
+    desc, notes, listed_in, comment = row_details[8].strip(' ,"\''), row_details[9].strip(' ,"\''), row_details[16].strip(' ,"\''), row_details[17].strip(' ,"\'')
     alpha_rate = row_details[16].strip(" ,"\'")
 
     combined_desc = desc + ' ' + notes + ' ' + listed_in + ' ' + comment + ' ' + title + ' ' + genre
